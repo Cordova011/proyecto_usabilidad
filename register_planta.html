@@ -59,7 +59,7 @@
         <ul class="nav-inner">
           
 
-          <li class="nav-logo"><a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a></li>
+          <li class="nav-logo"><a href="index_admin.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a></li>
 
   
 
@@ -71,35 +71,44 @@
 
   <main id="main">
 
-    <div class="signup-form">
+    <div class="signup-form2">
       <form action="/examples/actions/confirmation.php" method="post">
-      <h2>Registrate</h2>
+      <h2>Registrar Nueva Planta</h2>
           <div class="form-group">
         <div class="row">
-          <div class="col"><input type="text" class="form-control" name="first_name" placeholder="Nombre" required="required"></div>
-          <div class="col"><input type="text" class="form-control" name="last_name" placeholder="Apellido" required="required"></div>
+          <div class="col"><input type="text" class="form-control" name="nombre_com" placeholder="Nombre Comun" required="required"></div>
+          <div class="col"><input type="text" class="form-control" name="nombre_cient" placeholder="Nombre Cientifico" required="required"></div>
         </div>        	
           </div>
           <div class="form-group">
-            <input type="email" class="form-control" name="email" placeholder="Correo Electronico" required="required">
+          <div class="row"> 
+            <div class="col"><input type="text" class="form-control" name="familia" placeholder="Familia" required="required"></div>
+            <div class="col"><input type="text" class="form-control" name="cantidad" placeholder="Cantidad" required="required"></div>
+          </div>
           </div>
       <div class="form-group">
-              <input type="password" class="form-control" name="password" placeholder="Contraseña" required="required">
+        <div class="row">
+          <div class="col"><input type="text" class="form-control" name="descripcion" placeholder="Descripcion" required="required"></div>
+          <div class="col"><input type="text" class="form-control" name="fecha_ing" placeholder="Fecha Ingreso" required="required"></div>
+        </div>
           </div>
-      <div class="form-group">
-              <input type="password" class="form-control" name="confirm_password" placeholder="Confirmar Contraseña" required="required">
-          </div>        
+
           <div class="form-group">
-        <label class="form-check-label"><input type="checkbox" required="required"> Acepto los<a href="#">Terminos de Uso</a> &amp; <a href="#">Politica de Privacidad</a></label>
-      </div>
+            <a class="btn btn-success btn-lg btn-block" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Seleccionar Tratamiento
+            </a>
+          
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Tratamiento 1</a>
+              <a class="dropdown-item" href="#">Tratamiento 2</a>
+              <a class="dropdown-item" href="#">Tratamiento 3</a>
+            </div>
+          </div>       
       <div class="form-group">
-              <button type="submit" class="btn btn-success btn-lg btn-block">Registrarse Ahora</button>
+        <button type="submit" class="btn btn-success btn-lg btn-block">Agregar Planta</button>
           </div>
       </form>
-    <div class="text-center">Ya tienes una cuenta? <a href="login_page.html">Iniciar Sesion</a></div>
   </div>
-
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
@@ -110,7 +119,6 @@
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-       
       </div>
     </div>
 
