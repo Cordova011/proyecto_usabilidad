@@ -1925,4 +1925,34 @@ section {
 	text-decoration: underline;
 }  
 
-/*Drop Cantidad*/
+/*Payment*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+.jumbotron-flat {
+  background-color: #fff;
+  height: 100%;
+  border: 1px solid #4DB8FF;
+  background: #5AB652;
+  width: 50%;
+text-align: center;
+overflow: auto;
+}
+
+.paymentAmt {
+    font-size: 80px; 
+}
+
+.centered {
+    text-align: center;
+}
+
+.title {
+ padding-top: 30px;
+ padding-left: 30px;   
+}
+
+.form-row{
+  padding-left: 30px;
+
+}
